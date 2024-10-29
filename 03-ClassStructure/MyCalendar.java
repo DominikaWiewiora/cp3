@@ -1,6 +1,6 @@
 public class MyCalendar {
     static int year = 2024;
-    static int month = 1;
+    static int month = 3;
     static int day = 1;
 
     static String myDate(){
@@ -10,6 +10,7 @@ public class MyCalendar {
     public static void main(String[] args) {
         System.out.println(myDate());
         System.out.println(monthName());
+        System.out.println(day());
     }
     
     static String monthName() {
@@ -19,8 +20,19 @@ public class MyCalendar {
 
     static int day() {
         int[] monthDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        
+        int totalDays = 0;
 
+    
+    for (int i = 0; i < month - 1; i++) {
+        totalDays += monthDays[i];
+    }
+
+    totalDays += day; 
+
+    return totalDays;
+
+
+        
     }
     
 
