@@ -42,8 +42,14 @@ public class DrivingLicence {
     }
 
     public void setName(String name) {
-        this.name = name;
+        StringBuilder newname = new StringBuilder(name.toLowerCase());
+    
+        char firstLetter = Character.toUpperCase(newname.charAt(0));
+        newname.setCharAt(0, firstLetter);
+
+        this.name = newname.toString();
     }
+    
 
     public void setSurname(String surname) {
         this.surname = surname;

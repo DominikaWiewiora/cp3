@@ -1,7 +1,7 @@
 public class DrivingLicenceTest {
     public static void main(String[] args) {
         DrivingLicence dl = new DrivingLicence();
-        dl.setName("Jack");
+        dl.setName("jacK");
         dl.setSurname("Smth");
         dl.setAddress("somewhere");
         dl.setPostalCode("12-345");
