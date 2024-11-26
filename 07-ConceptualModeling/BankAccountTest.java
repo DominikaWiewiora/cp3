@@ -1,17 +1,15 @@
 public class BankAccountTest {
-    
-
     public static void main(String[] args) {
-    BankAccount  acc = new BankAccount();  
-    
-    acc.Deposit(500);
-    System.out.println(acc.Display());
-    acc.Deposit(200);
-    System.out.println(acc.Display());
-    acc.Withdraw(300);
-    System.out.println(acc.Display());
-    acc.Withdraw(600);
-    System.out.println(acc.Display());
+        BankAccount acc = new BankAccount();
+        acc.deposit(500);
+        System.out.println("Balance: PLN " + acc.displayBalance());
+        acc.deposit(200);
+        System.out.println("Balance: PLN " + acc.displayBalance());
+        acc.withdraw(300);
+        System.out.println("Balance: PLN " + acc.displayBalance());
+        acc.withdraw(600);
+        System.out.println("Balance: PLN " + acc.displayBalance());
+        acc.withdraw(700);
+        acc.displayRecentTransactions();
     }
-
 }
