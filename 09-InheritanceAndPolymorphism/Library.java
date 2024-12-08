@@ -10,8 +10,10 @@ public class Library {
     }
 
     public void displayBooks() {
-        for (Book b: books) {
-            System.out.println();
+        for (Book b : books) {
+            // Call the display() method of each book
+            b.display();
+            System.out.println(); // Add a blank line for better readability
         }
     }
 }

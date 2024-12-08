@@ -1,8 +1,12 @@
 public class Ebook extends Book {
     private String fileName;
 
-    public Ebook(String title, String author, String fileName) {
-        super(title, author);
+   
+
+    
+
+    public Ebook(String title, Writer author, Publisher publisher, int yearOfPublication, String fileName) {
+        super(title, author, publisher, yearOfPublication);
         this.fileName = fileName;
     }
 
@@ -19,5 +23,7 @@ public class Ebook extends Book {
         System.out.println("Title: "+getTitle());
         System.out.println("Author: "+getAuthor());
         System.out.println("File name: "+getFileName());
+        System.out.println(getPublisher());
+        System.out.println("Year of publication: "+getYearOfPublication());
     }
 }

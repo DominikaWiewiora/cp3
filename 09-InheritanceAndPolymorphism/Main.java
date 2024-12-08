@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        Book book1 = new Book("BookTitle1", "Author Firts");
         
-        
-        Ebook ebook1 = new Ebook("EbookTitle1", "Mark Smith", "File1");
+        Writer writer1 = new Writer("Patryk", "Taki", "drama");
+        Publisher publisher1 = new Publisher("Stefan", "Cityy1");
+        Book book1 = new Book("BookTitle1", writer1, publisher1, 2000);
+        Ebook ebook1 = new Ebook("ebok1", writer1, publisher1, 2001, "file1");
+        Audiobook audiobook1 = new Audiobook("Audiobook1", writer1, publisher1, 2003, 90, 13);
      
 
-        Audiobook audiobook1 = new Audiobook("Audiobook1", "AnnaSmith", 60, 20);
+       
     
 
         Book[] b = new Book[3];
